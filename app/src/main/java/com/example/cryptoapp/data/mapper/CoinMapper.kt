@@ -23,7 +23,7 @@ class CoinMapper {
             dto.highDay,
             dto.lowDay,
             dto.lastMarket,
-            BASE_IMAGE_URL +  dto.imageUrl
+            BASE_IMAGE_URL + dto.imageUrl
         )
     }
 
@@ -80,6 +80,6 @@ class CoinMapper {
     }
 
     companion object {
-        const val BASE_IMAGE_URL = "https://cryptocompare.com"
+        private const val BASE_IMAGE_URL = "https://cryptocompare.com"
     }
 }

@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
-    //id("org.jetbrains.kotlin.kapt") version "1.9.23"
+    id("org.jetbrains.kotlin.kapt") version "1.9.23"
     alias(libs.plugins.ksp)
 }
 
@@ -71,4 +71,8 @@ dependencies {
 
     //Work Manager
     implementation(libs.androidx.work.runtime.ktx)
+
+    //Dagger
+    implementation (libs.dagger)
+    kapt (libs.dagger.compiler)
 }
